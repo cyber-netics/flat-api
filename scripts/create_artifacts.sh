@@ -7,9 +7,9 @@ set -e
 #============= Environmental Variables =============
 export AWS_ACCOUNT_ID=$1 # accound id in iam 
 export AWS_DEFAULT_REGION=$2
-export SERVICE_NAME=$3 # Name when creating ECS Service
+export SERVICE_NAME=$3 #  ECS Service name
 export CONTAINER_NAME=$4 # ECS Task Definition name
-export CONTAINER_PORT=$5 # Main port
+export CONTAINER_PORT=80 # Main port
 
 
 #============ Template and Output file =============
