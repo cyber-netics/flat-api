@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+  backend:
+    image: backend:latest
+    restart: on-failure
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"
