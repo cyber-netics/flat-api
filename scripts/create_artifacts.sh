@@ -5,11 +5,11 @@ set -e
 # ($AWS_DEFAULT_REGION) with acutal env passed as arg
 
 #============= Environmental Variables =============
-export AWS_ACCOUNT_ID=$1
+export AWS_ACCOUNT_ID=$1 # accound id in iam 
 export AWS_DEFAULT_REGION=$2
-export SERVICE_NAME=$3
-export CONTAINER_NAME=$4
-export CONTAINER_PORT=$5
+export SERVICE_NAME=$3 # Name when creating ECS Service
+export CONTAINER_NAME=$4 # ECS Task Definition name
+export CONTAINER_PORT=$5 # Main port
 
 
 #============ Template and Output file =============

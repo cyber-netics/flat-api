@@ -13,7 +13,7 @@
       "memoryReservation": 250,
       "volumesFrom": [],
       "image": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend:latest",
-      "essential": false,
+      "essential": true,
       "name": "backend"
     }
   ],
