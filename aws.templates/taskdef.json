@@ -10,7 +10,7 @@
       ],
       "cpu": 0,
       "environment": [],
-      "memoryReservation": 300,
+      "memoryReservation": 250,
       "volumesFrom": [],
       "image": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend:latest",
       "essential": false,
@@ -18,7 +18,7 @@
     }
   ],
   "compatibilities": ["EC2"],
-  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/$SERVICE_NAME:$SERVICE_VERSION",
+  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/$SERVICE_NAME:1.0",
   "family": "$SERVICE_NAME",
   "requiresAttributes": [
     {
