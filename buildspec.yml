@@ -15,6 +15,9 @@ phases:
       # Build Production Images
       - docker build -t backend -f ./src/backend/Dockerfile ./src/backend
 
+      # Create Artifacts
+      - bash ./scripts/create_artifacts.sh $AWS_ACCOUNT_ID $AWS_DEFAULT_REGION
+      
   post_build:
     commands:
       # Login to aws ECR
