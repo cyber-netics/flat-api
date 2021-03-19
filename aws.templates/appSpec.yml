@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/ApiService"
+        TaskDefinition: "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/flagApi-Service"
         LoadBalancerInfo:
-          ContainerName: "FlagApi-Service"
+          ContainerName: "Flag-Api"
           ContainerPort: 80

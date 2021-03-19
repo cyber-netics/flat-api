@@ -18,8 +18,8 @@
     }
   ],
   "compatibilities": ["EC2"],
-  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/FlagApi-Service:1.0",
-  "family": "FlagApi-Service",
+  "taskDefinitionArn": "arn:aws:ecs:$AWS_DEFAULT_REGION:$AWS_ACCOUNT_ID:task-definition/Flag-Api:1",
+  "family": "Flag-Api",
   "requiresAttributes": [
     {
       "name": "com.amazonaws.ecs.capability.ecr-auth"
